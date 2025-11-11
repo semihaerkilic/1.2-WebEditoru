@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(185, 209, 240);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: aqua;
+    text-align: center;
+}
+
+
+.box1 {
+    width:250px;
+    padding: 10px;
+    border: rgb(250, 157, 157) 5px solid;
+    background-color: bisque;
+    border-radius: 20px;
+    margin: 20px
+}
+
+.box2 {
+    width:250px;
+    padding: 10px;
+    border: rgb(80, 170, 203) 5px dotted;
+    background-color: rgb(232, 225, 216);
+    border-radius: 20px;
+    margin: 20px
+}
+
+.box3 {
+    width:250px;
+    padding: 10px;
+    border: rgb(123, 233, 156) 5px dashed;
+    background-color: rgb(203, 185, 164);
+    border-radius: 20px;
+    margin: 20px
+}

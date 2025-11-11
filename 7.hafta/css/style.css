@@ -1,0 +1,185 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav,ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(127, 138, 138);
+    cursor: pointer;/* bağlantı veya bir düğme gibi tıklanabilir öğe*/
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px;
+    position: absolute;/*resim üst kısmı tamamladı beyazlık kayboldu*/
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+}
+
+header h2 {
+    letter-spacing: 4px;
+    font-size: 32px;
+}
+
+header nav {
+    display: flex; /*yan yana gelmeleri için kullandık*/
+}
+
+header nav li {
+    margin: 15px;/*aralarına boşluk koyduk*/
+}
+
+@media (max-width: 800px)/*tablet telefon boyutuna göre ayarlama*/ {
+    header{
+        flex-direction: column;
+    }
+
+    header h2 {
+        margin-bottom: 15px;
+    }
+}
+
+.background-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background-image: url(../images/snake-8349951_1280.jpg);/*cssden images dosyasına ulaşmak için .. kulklandık*/
+    width: 100%;
+    height: 100%;
+    background-color: darkslategrey;
+    background-size: cover;
+}
+
+.banner {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;/*resmin ekranın ne kadarında görüneceğini belirledik*/
+    color: #fff;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 125px 100px;
+}
+
+.banner h1 {
+    font-size: 60px;
+    margin: 15px;
+}
+
+.banner h3 {
+    font-size: 28px;
+    margin-bottom: 48px;
+}
+
+@media (max-width: 800px){
+    .banner h1{
+        font-size: 48px;
+    }
+
+    .banner h3 {
+        font-size: 24px;
+    }
+}
+
+.background-image:after/*resmin üzerindeki yazıların görünürlüğünü arttırmak için kullandık*/ {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #555b5f;
+    opacity: 0.45;
+}
+
+a.btn {
+    color: #a19e9e;
+      background-color: rgba(66, 70, 73, 0.5); /* Burada son sayıyı değiştirerek saydamlık seviyesini ayarlayabilirsiniz */
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+section h3.title{
+    color: black;
+    text-transform: capitalize;
+    font: bold 32px arial;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+section p {
+    max-width: 800px;
+    text-align: center;
+    padding: 0px 20px;
+    line-height: 2;
+    margin-bottom: 35px;
+}
+
+hr {
+    width: 150px;
+    border: 0px;
+    height: 2px;
+    background-color: darkslategrey;
+    margin-bottom: 80px;
+}
+
+ul.flex-gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;/*herbir eleman ortalansın*/
+}
+
+.our-work .flex-gallery li {
+    height: 350px;
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
+
+.our-work .flex-gallery li.small {
+    flex-basis: 40%;
+}
+
+.our-work .flex-gallery li.large {
+    flex-basis: 60%;
+}
+
+ul.flex-gallery li {
+    opacity: 0.85;/*saydamlık miktarı*/
+}
+
+ul.flex-gallery hover {
+    opacity: 1;
+}
+
+@media (max-width: 1000px) {
+    .our-work .flex-gallery li.small,
+    .our-work .flex-gallery li.large {
+        flex-basis: 100%;
+    }
+}

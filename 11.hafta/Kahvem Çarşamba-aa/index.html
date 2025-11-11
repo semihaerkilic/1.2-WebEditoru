@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İST</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo-1.png" alt="köprü
+                "></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="products.html">Ürünler</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Kahvem Çarşamba</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, animi! Repellendus veritatis incidunt error aliquid culpa <br>porro recusandae possimus, laborum ea fugiat quo atque eius.</p>
+            <a href="#" class="hero-btn">Devamını Oku...</a>
+        </div>
+    </section>
+     
+    <!--------------course-------------------->
+    <section class="course">
+        <h1>Kahve Yapmayı Bizden Öğrenin</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, impedit?</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Temel Bilgiler</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident fugiat voluptatibus autem aliquam, dicta et modi quisquam enim doloribus blanditiis nihil qui quam soluta!</p>
+            </div>
+            <div class="course-col">
+                <h3>Kahve Tarihi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident fugiat voluptatibus autem aliquam, dicta et modi quisquam enim doloribus blanditiis nihil qui quam soluta!</p>
+            </div>
+            <div class="course-col">
+                <h3>Kahve Yapıyorum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident fugiat voluptatibus autem aliquam, dicta et modi quisquam enim doloribus blanditiis nihil qui quam soluta!</p>
+            </div>
+        </div>
+    </section>
+    <!-----------------Menu------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>

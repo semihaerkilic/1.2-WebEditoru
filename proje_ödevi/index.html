@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ödev</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/pngegg.png" alt="Kahvem Çarşamba"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="maclar.html">maçlar</a></li>
+                   
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Haikyuu</h1>
+            <p>Bir şans etkinliği Shouyou Hinata’nın voleybol aşkını tetikler. Takımında hiç oyuncu yoktur ama bir şekilde gayret ederek “Kortun Kralı” olarak bilinen, süper star, Tobio Kageyama tarafından ezildikleri ilk ve son Orta okullar ligi maçına çıkmayı başarırlar. </p>
+            <a href="about.html" class="hero-btn">Devamını Oku...</a>
+        </div>
+    </section>
+     
+    <!--------------course-------------------->
+    <section class="course">
+        <h1>karasuno kimlerden oluşuyor </h1>
+        <p>3 koç,2 menejer ve 8 oyuncu var.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>KOÇLAR</h3>
+                <p>Ittetsu Takeda (Head coach)<br>
+                    Keishin Ukai (Assistant coach)<br>
+                    Ikkei Ukai (Former)
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>MENEJERLER</h3>
+                <p>Kiyoko Shimizu<br>
+                    Hitoka Yach</p>
+            </div>
+            <div class="course-col">
+                <h3>OYUNCULAR</h3>
+                <p> Daichi Sawamura
+                    <br> Asahi Azumane
+                    <br>  Kōshi Sugawara
+                    <br> Yū Nishnoya
+                   <br> Ryūnosuke Tanaka
+                 <br>Kei Tsukishima
+                  <br> Tobio Kageyama
+                    <br> Shōyō Hinata</p>
+            </div>
+        </div>
+    </section>
+    <!-------------coffee------------------>
+    <section class="coffee">
+        <h1>Japonya ulusal bahar voleybol turnuvası takvimi</h1>
+        <p>maçları kaçırmammak için tıklayınızzz..</p>
+        <div class="row">
+            <a href="maclar.htm" class="eyo-btn">maç takvimi...</a>
+        </div>
+    </section>
+
+     
+      <!----------------testimoials------------>
+      <section class="testimonials">
+        <h1>İzleyicilerimizin Yorumları</h1>
+
+        <div class="row">
+            <div class="testimonials-col">
+                <div>
+                    <p>Her voleybolcunun okuduğu mangadır. Voleybolu bilmeyen ya da oynamayana da bu sporu sevdiren bi manga herkesin okumasını öneririm çünkü voleybolu sevdirdiği kadar takımın gücünü, arkadaşlığın önemli bir şey olduğunu öğretir bana göre aynı zamanda o kadar azmin ne kadar güzel şeylere neden olduğunu gösteriyor.</p>
+                    <h3>Saeko Tanaka</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+              <div>
+                  <p>Ele alınan spor dalı "Voleybol" peki, voleybol nasıl bir spordur. Takımca oynanan koordinasyon olmazsa olmaz, bencilliğin yeri olmayan bir spordur.</p>
+                  <h3>Alisa Hayba</h3>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+              </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-----------------Menu------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
